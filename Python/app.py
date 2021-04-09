@@ -12,6 +12,6 @@ pfile = open('password.txt','r')
 
 app.config['MYSQL_USER'] = ufile.read()
 ufile.close()
-app.config['MYSQL_PASSWORD'] = pfile.read()
-pfile.close()
-app.config['MYSQL_DB'] = ''
+app.config['MYSQL_DB'] = 'world'
+app.config['MYSQL_HOST'] = 'localhost'
+mysql = MySQL(app)
